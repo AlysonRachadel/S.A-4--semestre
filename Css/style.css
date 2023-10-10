@@ -209,6 +209,95 @@ body{
     transform: translateX(200%);
 }
 
+.logo {
+    width: 90px;
+}
+
+.btn {
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-family: sans-serif;
+}
+
+.btn:hover {
+    background: rgb(133, 4, 4);
+}
+
+.foto {
+    margin-left: 100px;
+    margin-top: 70px;
+    width: 500px;
+    height: 500px;
+}
+
+.foto2 {
+    margin-top: 100px;
+}
+
+.texto {
+    padding: 20px;
+    margin-left: 290px;
+    margin-top: 230px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+.texto p {
+    font-size: 20px;
+}
+
+.texto h1 {
+    font-size: bold 40px;
+}
+
+.sobre1 {
+    margin-top: 200px;
+}
+
+.texto1 {
+    margin-top: 150px;
+    margin-right: 100px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+.texto1 h1 {
+    font-size: bold 30px;
+}
+
+.texto1 p {
+    font-size: 20px;
+}
+
+.mapa {
+    height: 300px;
+    width: 700px;
+    border-color: 5px solid black;
+}
+
+footer {
+    padding: 2rem 0;
+    margin-top: 200px;
+    background-color: rgba(85, 83, 82, 0.356);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+.roda {
+    padding: 20px;
+}
+
+.logoroda {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-heading {
+    font-size: 20px;
+}
 
 
 
@@ -218,4 +307,7 @@ body{
 
 
 
-
+.foto {
+    width: 300px;
+    height: 300px;
+}
