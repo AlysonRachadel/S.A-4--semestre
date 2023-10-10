@@ -16,7 +16,7 @@
 		$_SESSION['txtsenha']  = $senha; 
 		
 		if(isset($_SESSION['txtnome'])){							
-				header('location:menu.html'); 
+				header('location:indexx.html'); 
 			}
 		else
 			{
