@@ -13,3 +13,10 @@ loginBtn.addEventListener('click', () =>
 {
 container.classList.remove("active");
 });
+
+const myModal = document.getElementById('teste')
+const myInput = document.getElementById('testee')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

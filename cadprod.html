@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tela de cadastro</title>
     <link rel="stylesheet" href="css/style2.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -36,6 +36,33 @@
                 <a href="./pedidos.html"><button type="button" class="btn">Pedir Delivery</button></a>
             </form>
         </nav>
+
+    </div>
+    <div class="container"> 
+        <form class="column g-3 w-75 mt-2 mx-auto" >
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Combo</label>
+                <input type="email" placeholder="Nome do combo" class="form-control" id="inputEmail4">
+            </div>
+            
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Valor</label>
+                <input type="text" placeholder="Valor do combo" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col mb-3">
+                <label for="descricao" class="form-label">Descrição</label>
+                <textarea class="form-control" id="descricao" rows="3"></textarea>
+              </div>
+              <div class="col mb-2">
+                <label for="img-form" class="form-label">Imagem do produto</label>
+                <input class="form-control" type="file" id="img-form">
+              </div>
+            
+            <div class="col-12 mt-2">
+                <button type="submit" id="btn-cad" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
+    </div>
 
 
 
