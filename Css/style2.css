@@ -97,9 +97,12 @@
     margin-right: 50px;
 }
 
-.nomezinho {
-    align-items: flex-end;
+.textomodal {
     text-align: center;
+}
+
+.modal-title {
+    margin-left: 250px;
 }
 
 .nome {
@@ -118,6 +121,14 @@
     margin-left: 15px;
     width: 200px;
     height: 200px;
+    border-radius: 15px;
+}
+
+.fotomodal {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 500px;
+    height: 500px;
     border-radius: 15px;
 }
 
