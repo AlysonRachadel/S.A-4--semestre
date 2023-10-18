@@ -132,6 +132,13 @@
     border-radius: 15px;
 }
 
+#botao-carrinho {
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    width: 50px;
+}
+
 footer {
     padding: 2rem 0;
     margin-top: 200px;
@@ -153,6 +160,6 @@ footer {
     font-size: 20px;
 }
 
-.btn_cad{ 
+.btn_cad {
     margin-top: 10px;
 }
