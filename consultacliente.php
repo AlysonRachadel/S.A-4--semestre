@@ -71,7 +71,7 @@
 									<td><?php echo $ds_telefone ?></td>
 									
 									
-									<td align="center"><a href="delprod.php" class="btn btn-danger" onclick = "apagar('<?php echo $reg_cadastro["idCliente"]?>');">Excluir</td>
+									<td align="center"><a href="#" class="btn btn-danger" onclick = "apagar('<?php echo $reg_cadastro["idCliente"]?>');">Excluir</td>
 								</tr>
 
 							<?php
