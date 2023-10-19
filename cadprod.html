@@ -39,23 +39,28 @@
 
     </div>
     <div class="container"> 
-        <form class="column g-3 w-75 mt-2 mx-auto" >
+        <form  method="post" action="cadprod.php" class="column g-3 w-75 mt-2 mx-auto" >
+<div>
+    
+</div>
+            
             <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Combo</label>
-                <input type="email" placeholder="Nome do combo" class="form-control" id="inputEmail4">
+                <label for="Nomecombo" class="form-label">Combo/Promoção</label>
+                <input type="text"  name="ds_combonome" placeholder="Nome do combo" class="form-control" id="ds_combonome">
             </div>
             
             <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Valor</label>
-                <input type="text" placeholder="Valor do combo" class="form-control" id="inputPassword4">
+                <label for="Valorcombo" class="form-label">Valor</label>
+                <input type="text" name="ds_valorcombo" placeholder="Valor do combo" class="form-control" id="ds_valorcombo">
+                        
             </div>
             <div class="col mb-3">
                 <label for="descricao" class="form-label">Descrição</label>
-                <textarea class="form-control" id="descricao" rows="3"></textarea>
+                <textarea class="form-control" name="ds_descricao" id="ds_descricao" rows="3"></textarea>
               </div>
               <div class="col mb-2">
-                <label for="img-form" class="form-label">Imagem do produto</label>
-                <input class="form-control" type="file" id="img-form">
+                <label for="imgprod" class="form-label">Imagem do produto</label>
+                <input class="form-control" name="ds_imgprod" type="file" id="ds_imgprod">
               </div>
             
             <div class="col-12 mt-2">
