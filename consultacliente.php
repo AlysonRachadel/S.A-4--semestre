@@ -6,9 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <meta charset="utf-8">
         
-        <!-- adicionar CSS Bootstrap >-->
-        
-        <!-- css personalizado >-->
         <link href="Css/style.css" rel="stylesheet" >
 		
 		<script src="script.js"></script>
@@ -30,13 +27,13 @@
 		$query = mysqli_query($con,$sql);
 	?>		
 	<body>
-		<div class="container">
+		<div align="center" class="container ">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped table-hover table-condensed">
+                    <div class="table-responsive ">
+                        <table class="table table-bordered table-striped table-hover table-condensed ">
 							<thead>
-								<tr class="success">	
+								<tr class="">	
 								<th>ID</th>	
                                 <th>Nome</th>
 									<th>Email</th>
@@ -71,7 +68,7 @@
 									<td><?php echo $ds_telefone ?></td>
 									
 									
-									<td align="center"><a href="#" class="btn btn-danger" onclick = "apagar('<?php echo $reg_cadastro["idCliente"]?>');">Excluir</td>
+									<td><a href="#"  onclick = "apagar('<?php echo $reg_cadastro["idCliente"]?>');"><button>Excluir</button></a></td>
 								</tr>
 
 							<?php
@@ -86,7 +83,7 @@
 	
 	<!--<div class="col-xs-offset-4 col-xs-10">-->
 	<div class='col-lg-offset-10'>
-		<a href="indexx.html" class="btn btn-info">Voltar</a>
+	<a href="indexx.html"><button class="btn"> Voltar</button></a>
 	</div>
   </body>
 </html>
