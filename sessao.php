@@ -16,17 +16,17 @@
 		$_SESSION['txtsenha']  = $senha; 
 		
 		if(isset($_SESSION['txtnome'])){							
-				header('location:indexx.html'); 
+				header('location:index.html'); 
 			}
 		else
 			{
-			   header('location:index.html'); 			}
+			   header('location:login.html'); 			}
 	} 
 	else{ 	    
 		
 		unset ($_SESSION['txtnome']); 
 		unset ($_SESSION['txtsenha']);
-		header('location:index.html');
+		header('location:login.html');
 	}
 
 ?>	
