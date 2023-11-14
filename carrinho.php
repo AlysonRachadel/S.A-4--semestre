@@ -134,7 +134,7 @@ $query = mysqli_query($con, $sql);
                             <a class="nav-link " href="#"> (47) 9 9925-3412</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bi bi-facebook" href="#"> Da Hora pizzaria</a>
+                            <a class="nav-link bi bi-facebook" href="https://www.facebook.com/p/Da-hora-pizzaria-100044583169387/"> Da Hora pizzaria</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Dahorapizza@gmail.com</a>
