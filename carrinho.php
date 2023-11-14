@@ -53,70 +53,8 @@
         </div>
     </nav>
 
-    <div align="center" class="container ">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="table-responsive ">
-                    <table class="table table-bordered table-striped table-hover table-condensed ">
-                        <thead>
-                            <tr class="">
-                                <th>ID</th>
-                                <th>Nome</th>
-                                <th>Email</th>
-                                <th>Telefone</th>
-
-                            </tr>
-                        </thead>
-                        <?php
-                        $contlin = 2;
-                        /*
-								 mysqli_fetch_array - Retorna o campo, a posição do array
-								*/
-                        while ($reg_cadastro = mysqli_fetch_array($query)) {
-                            $idCliente = $reg_cadastro["idCliente"];
-                            $nm_cliente = $reg_cadastro["nm_cliente"];
-                            $ds_email = $reg_cadastro["ds_email"];
-                            $ds_telefone = $reg_cadastro["ds_telefone"] . "<br>";
-
-                        ?>
-                            <tr class="info">
-                                <?php
-                                if ($contlin % 2 == 0) {
-                                ?>
-                            <tr class="trpar">
-                            <?php
-                                }
-                            ?>
-                            <td>
-                                <?php echo $idCliente ?>
-                            </td>
-                            <td>
-                                <?php echo $nm_cliente ?>
-                            </td>
-                            <td>
-                                <?php echo $ds_email ?>
-                            </td>
-                            <td>
-                                <?php echo $ds_telefone ?>
-                            </td>
-
-
-                            <td><a href="#" onclick="apagar('<?php echo $reg_cadastro["
-                                    idCliente"] ?>');"><button>Excluir</button></a></td>
-                            </tr>
-
-                        <?php
-                            $contlin = $contlin + 1;
-                        }
-                        ?>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class='col-lg-offset-10'>
-        <a href="indexx.html"><button class="btn" id="bacana"> Voltar</button></a>
+        <a href="index.html"><button class="btn" id="bacana"> Voltar</button></a>
     </div>
 
 
@@ -142,33 +80,33 @@
                     </ul>
                 </div>
 
-        <div class="col-md-6 footer-column">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <span class="footer-heading"><img src="img/logo flux.png" class="logoroda">
-                        <br>
-                        Flux System</span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">h.xavier1232012@gmail.com</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">alyson.vinicius@icloud.com</a>
-                </li>
-            </ul>
-        </div>
-        </div>
+                <div class="col-md-6 footer-column">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <span class="footer-heading"><img src="img/logo flux.png" class="logoroda">
+                                <br>
+                                Flux System</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">h.xavier1232012@gmail.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">alyson.vinicius@icloud.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-        <div class="row text-center">
-            <div class="col-md-2 box">
-                <span class="copyright quick-links">Copyright &copy; Flux System>
+            <div class="row text-center">
+                <div class="col-md-2 box">
+                    <span class="copyright quick-links">Copyright &copy; Flux System>
 
-                </span>
+                    </span>
+                </div>
             </div>
         </div>
-        </div>
-        </footer>
-        <script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
