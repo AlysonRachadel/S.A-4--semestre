@@ -20,6 +20,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -425,7 +426,7 @@
                             com 8 Fatias (30cm), com opção de até 3 sabores
                         </p>
                         <h3>Pizza Familia - 4 Sabores</h3>
-                        <div class="form-check">
+                        <div id="combofamilia" class="form-check">
                             <label>
                                 <input class="form-check-input" type="checkbox" id="cincoqueijos" value="Produto 1">
                                 5 Queijos - Mussarela, Parmesão, Provolone, Catupiry e Cheddar
@@ -453,7 +454,7 @@
                     </div>
                 </div>
                 <label id="erromsg" style="color: red;"></label>
-                <button type="button" class="btn btn-primary mx-auto mb-3" onclick="adicionarcarrinho()">Adicionar ao
+                <button type="button" id="btn-carrinho" class="btn btn-primary mx-auto mb-3">Adicionar ao
                     carrinho</button>
             </div>
         </div>
@@ -461,7 +462,7 @@
 
 
     <div class="fixed-bottom d-flex justify-content-end ">
-        <a href="carrinho.html">
+        <a href="carrinho.php">
             <button type="button" id="botao-carrinho" class="btn"><i class="fa-solid fa-cart-shopping"
                     style="color: #ffffff;"></i></button>
         </a>
