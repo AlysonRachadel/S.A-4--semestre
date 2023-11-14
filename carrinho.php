@@ -39,6 +39,109 @@
         }
         ?>
 
+        <form class="form-inline">
+            <a href="cadprod.html">
+                <button type="button" id="botao" class="btn">Registrar</button>
+            </a>
+            <a href="consultacliente.php">
+                <button type="button" id="botao" class="btn">Consultar</button>
+            </a>
+            <a href="index.html">
+                <button type="button" id="botao" class="btn">Logar</button>
+            </a>
+        </form>
+        </div>
+    </nav>
+
+    <div align="center" class="container ">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-responsive ">
+                    <table class="table table-bordered table-striped table-hover table-condensed ">
+                        <thead>
+                            <tr class="">
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Email</th>
+                                <th>Telefone</th>
+
+                            </tr>
+                        </thead>
+                        <?php
+                        $contlin = 2;
+                        /*
+								 mysqli_fetch_array - Retorna o campo, a posição do array
+								*/
+                        while ($reg_cadastro = mysqli_fetch_array($query)) {
+                            $idCliente = $reg_cadastro["idCliente"];
+                            $nm_cliente = $reg_cadastro["nm_cliente"];
+                            $ds_email = $reg_cadastro["ds_email"];
+                            $ds_telefone = $reg_cadastro["ds_telefone"] . "<br>";
+
+                        ?>
+                            <tr class="info">
+                                <?php
+                                if ($contlin % 2 == 0) {
+                                ?>
+                            <tr class="trpar">
+                            <?php
+                                }
+                            ?>
+                            <td>
+                                <?php echo $idCliente ?>
+                            </td>
+                            <td>
+                                <?php echo $nm_cliente ?>
+                            </td>
+                            <td>
+                                <?php echo $ds_email ?>
+                            </td>
+                            <td>
+                                <?php echo $ds_telefone ?>
+                            </td>
+
+
+                            <td><a href="#" onclick="apagar('<?php echo $reg_cadastro["
+                                    idCliente"] ?>');"><button>Excluir</button></a></td>
+                            </tr>
+
+                        <?php
+                            $contlin = $contlin + 1;
+                        }
+                        ?>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='col-lg-offset-10'>
+        <a href="indexx.html"><button class="btn" id="bacana"> Voltar</button></a>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 footer-column border-right">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <span class="footer-heading"><img src="img/logo lateral.png" class="logoroda">
+                                <br>
+                                Da Hora Pizzaria</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"> (47) 9 9925-3412</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-facebook" href="https://www.facebook.com/p/Da-hora-pizzaria-100044583169387/"> Da Hora pizzaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dahorapizza@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
         <div class="col-md-6 footer-column">
             <ul class="nav flex-column">
                 <li class="nav-item">

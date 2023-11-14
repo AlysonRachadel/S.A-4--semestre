@@ -33,39 +33,38 @@
             </button>
 
             <form class="form-inline">
-                <a href="./pedidos.html"><button type="button" class="btn">Pedir Delivery</button></a>
+                <a href="./pedidos.html"><button type="button" id="btn" class="btn">Pedir Delivery</button></a>
             </form>
         </nav>
 
     </div>
-    <div class="container"> 
-        <form  method="post" action="cadprod.php" class="column g-3 w-75 mt-2 mx-auto" >
-<div>
-    
-</div>
-            
-            <div class="col-md-6">
-                <label for="Nomecombo" class="form-label">Combo/Promoção</label>
-                <input type="text"  name="ds_combonome" placeholder="Nome do combo" class="form-control" id="ds_combonome">
-            </div>
-            
-            <div class="col-md-6">
-                <label for="Valorcombo" class="form-label">Valor</label>
-                <input type="text" name="ds_valorcombo" placeholder="Valor do combo" class="form-control" id="ds_valorcombo">
-                        
-            </div>
-            <div class="col mb-3">
-                <label for="descricao" class="form-label">Descrição</label>
-                <textarea class="form-control" name="ds_descricao" id="ds_descricao" rows="3"></textarea>
-              </div>
-              <div class="col mb-2">
-                <label for="imgprod" class="form-label">Imagem do produto</label>
-                <input class="form-control" name="ds_imgprod" type="file" id="ds_imgprod">
-              </div>
-            
-            <div class="col-12 mt-2">
-                <button type="submit" id="btn-cad" class="btn btn-primary">Cadastrar</button>
-            </div>
+    <div class="container">
+        <form method="post" action="cadprod.php" class="column g-3 w-75 mt-2 mx-auto">
+            <div class="container p-3">
+                <div class="col-md-6">
+                    <label for="Nomecombo" class="form-label mx-5">Combo/Promoção</label>
+                    <input type="text" name="ds_combonome" placeholder="Nome do combo" class="form-control mx-5 mb-3"
+                        id="ds_combonome">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="Valorcombo" class="form-label mx-5">Valor</label>
+                    <input type="text" name="ds_valorcombo" placeholder="Valor do combo" class="form-control mx-5 mb-3"
+                        id="ds_valorcombo">
+
+                </div>
+                <div class="col mb-3">
+                    <label for="descricao" class="form-label mx-5">Descrição</label>
+                    <textarea class="form-control mx-5" name="ds_descricao" id="ds_descricao" rows="3"></textarea>
+                </div>
+                <div class="col mb-2">
+                    <label for="imgprod" class="form-label mx-5">Imagem do produto</label>
+                    <input class="form-control mx-5" name="ds_imgprod" type="file" id="ds_imgprod">
+                </div>
+
+                <div class="col-12 mt-2">
+                    <button type="submit" id="btn" class="btn mx-5 mt-2">Cadastrar</button>
+                </div>
         </form>
     </div>
 
