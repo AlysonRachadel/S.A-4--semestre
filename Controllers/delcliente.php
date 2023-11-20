@@ -7,6 +7,6 @@
 		mysqli_query($con,$sql);
 		if(mysqli_affected_rows($con) >=0){
 			echo"<script>alert('Registro apagado com sucesso');</script>";
-			echo"<script>window.location='consultacliente.php'</script>";
+			echo"<script>window.location='../views/consultacliente.php'</script>";
 			}
 	}

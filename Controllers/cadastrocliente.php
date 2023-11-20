@@ -23,6 +23,6 @@
 		 values('$ds_nomec','$ds_telefone','$ds_email','$ds_senhac')");
 
 	echo "<script>alert('Inclusão realizada com sucesso');</script>";
-	echo "<script>window.location='index.html'</script>";
+	echo "<script>window.location='../views/login.html'</script>";
 
 	?>

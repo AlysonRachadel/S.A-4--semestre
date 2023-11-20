@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="../Css/style.css">
     <title>Login</title>
 </head>
 
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form method="post" action="cadastrocliente.php">
+            <form method="post" action="../Controllers/cadastrocliente.php">
                 <h1> Crie sua conta</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"> </i></a>
@@ -31,15 +31,15 @@
 
         </div>
         <div class="form-container sign-in">
-            <form method="post" action="sessao.php">
+            <form method="post" action="../Controllers/sessao.php">
                 <h1> Login </h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
                 </div>
                 <span>Ou use seu email e senha</span>
-                <input type="email" placeholder="Email" name="ds_usuario" id="ds_usuario">
-                <input type="password" placeholder="Senha" name="ds_senha" id="ds_senha">
+                <input type="email" placeholder="Email" name="ds_email" id="ds_email">
+                <input type="password" placeholder="Senha" name="ds_senhac" id="ds_senhac">
                 <a href="#"> Esqueceu sua senha? </a>
                 <button> Entrar </button>
             </form>
@@ -61,7 +61,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>
