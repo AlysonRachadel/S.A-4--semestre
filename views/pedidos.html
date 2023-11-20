@@ -13,9 +13,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
@@ -25,7 +22,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg justify-content-between">
-        <a class="navbar-brand" href="index.html"> <img class="logo" src="../img/logo nome.png"></a>
+        <a class="navbar-brand" href="index.html"> <img id="logo" src="../img/logo nome.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,34 +41,35 @@
         </form>
         </div>
     </nav>
+    
 
     <div class="tbl mt-5">
-        <div class="tabela1">
-            <div class="combo">
-                <div class="combo1" data-bs-toggle="modal" data-bs-target="#modal1"><img src="../img/combo 1.jpg"
-                        class="fotoped">
-                    <div class="nomizinho">
-                        <h3 class="nome mt-3">Combo DaHora</h3>
-                        <p class="desc mt-3">
+        <div id="tabela1">
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal1"><img src="../img/combo 1.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Combo DaHora</h3>
+                        <p id="desc" class="mt-3">
                             Combo DaHora 1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1 sabor + 1 Pizza Média
                             com 8 Fatias (30cm), com opção de até 3 sabores
                         </p>
-                        <h3 class="nome">R$80,00</h3>
+                        <h3 id="nome">R$80,00</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="combo">
-                <div class="combo1" data-bs-toggle="modal" data-bs-target="#modal2"><img src="../img/combo 2.jpg"
-                        class="fotoped">
-                    <div class="nomizinho">
-                        <h3 class="nome mt-3">Combo Pra Galera</h3>
-                        <p class="desc mt-3">
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal2"><img src="../img/combo 2.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Combo Pra Galera</h3>
+                        <p id="desc" class="mt-3">
                             1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1
                             sabores + 1 Pizza familia com 16 Fatias (45cm), com opção de até 4 sabores + 1
                             Refrigerante 2l
                         </p>
-                        <h2 class="nome">R$120,00</h2>
+                        <h2 id="nome">R$120,00</h2>
                     </div>
                 </div>
             </div>
@@ -80,30 +78,30 @@
 
 
     <div class="tbl mt-5">
-        <div class="tabela1">
-            <div class="combo">
-                <div class="combo1" data-bs-toggle="modal" data-bs-target="#modal3"><img src="../img/pizza 4.jpg"
-                        class="fotoped">
-                    <div class="nomizinho">
-                        <h3 class="nome mt-3">Pizza Broto </h3>
-                        <p class="desc mt-3">
+        <div id="tabela1">
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal3"><img src="../img/pizza 4.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Pizza Broto </h3>
+                        <p id="desc" class="mt-3">
                             Pizza Broto com 6 Fatias (25 cm), com opção de até 1
                             sabores
                         </p>
-                        <h3 class="nome">R$30,00</h3>
+                        <h3 id="nome">R$30,00</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="combo">
-                <div class="combo1" data-bs-toggle="modal" data-bs-target="#modal4"><img src="../img/pizza 3.jpg"
-                        class="fotoped">
-                    <div class="nomizinho">
-                        <h3 class="nome mt-3">Pizza Média </h3>
-                        <p class="desc mt-3">
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal4"><img src="../img/pizza 3.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Pizza Média </h3>
+                        <p id="desc" class="mt-3">
                             Pizza Média com 8 Fatias (30cm), com opção de até 3 sabores
                         </p>
-                        <h2 class="nome">R$45,00</h2>
+                        <h2 id="nome">R$45,00</h2>
                     </div>
                 </div>
             </div>
@@ -112,29 +110,29 @@
 
 
     <div class="tbl mt-5">
-        <div class="tabela1">
-            <div class="combo">
-                <div class="combo1" data-bs-toggle="modal" data-bs-target="#modal5"><img src="../img/pizza 2.jpg"
-                        class="fotoped">
-                    <div class="nomizinho">
-                        <h3 class="nome mt-3">Pizza Grande</h3>
-                        <p class="desc mt-3">
+        <div id="tabela1">
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal5"><img src="../img/pizza 2.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Pizza Grande</h3>
+                        <p id="desc" class="mt-3">
                             Pizza Grande com 12 Fatias (40cm), com opção de até 4 sabores
                         </p>
-                        <h3 class="nome">R$60,00</h3>
+                        <h3 id="nome">R$60,00</h3>
                     </div>
                 </div>
             </div>
 
-            <div class="combo">
-                <div class="combo1" data-bs-toggle="modal" data-bs-target="#modal6"><img src="../img/pizza 1.jpg"
-                        class="fotoped">
-                    <div class="nomizinho">
-                        <h3 class="nome mt-3">Pizza Familia</h3>
-                        <p class="desc mt-3">
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal6"><img src="../img/pizza 1.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Pizza Familia</h3>
+                        <p id="desc" class="mt-3">
                             Pizza Familia com 16 Fatias (45cm), com opção de até 4 sabores
                         </p>
-                        <h2 class="nome">R$85,00</h2>
+                        <h2 id="nome">R$85,00</h2>
                     </div>
                 </div>
             </div>
@@ -151,7 +149,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
                 </div>
                 <div class="modal-body">
-                    <div class="textomodal">
+                    <div id="textomodal">
                         <p>
                             Combo DaHora 1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1 sabor + 1 Pizza
                             Média
@@ -220,7 +218,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
                 </div>
                 <div class="modal-body">
-                    <div class="textomodal">
+                    <div id="textomodal">
                         <p>
                             1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1 sabores + 1 Pizza familia com 16
                             Fatias (45cm), com opção de até 4 sabores + 1 Refrigerante 2l
@@ -288,7 +286,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
                 </div>
                 <div class="modal-body">
-                    <div class="textomodal">
+                    <div id="textomodal">
                         <p>
                             Pizza Broto com 6 Fatias (25 cm), com opção de até 1 sabores
                         </p>
@@ -329,7 +327,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
                 </div>
                 <div class="modal-body">
-                    <div class="textomodal">
+                    <div id="textomodal">
                         <p>
                             Pizza Média com 8 Fatias (30cm), com opção de até 3 sabores
                         </p>
@@ -374,7 +372,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
                 </div>
                 <div class="modal-body">
-                    <div id="combofamilia" class="textomodal">
+                    <div id="textomodal">
                         <p>
                             Pizza Grande com 12 Fatias (40cm), com opção de até 4 sabores
                         </p>
@@ -419,7 +417,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
                 </div>
                 <div class="modal-body">
-                    <div class="textomodal">
+                    <div id="textomodal">
                         <p>
                             Combo DaHora 1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1 sabor + 1 Pizza
                             Média
@@ -474,7 +472,7 @@
                 <div class="col-md-6 footer-column border-right">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <span class="footer-heading"><img src="../img/logo lateral.png" class="logoroda">
+                            <span class="footer-heading"><img src="../img/logo lateral.png" id="logoroda">
                                 <br>
                                 Da Hora Pizzaria</span>
                         </li>
@@ -482,7 +480,9 @@
                             <a class="nav-link " href="#"> (47) 9 9925-3412</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bi bi-facebook" href="https://www.facebook.com/p/Da-hora-pizzaria-100044583169387/"> Da Hora pizzaria</a>
+                            <a class="nav-link bi bi-facebook"
+                                href="https://www.facebook.com/p/Da-hora-pizzaria-100044583169387/"> Da Hora
+                                pizzaria</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Dahorapizza@gmail.com</a>
@@ -493,7 +493,7 @@
                 <div class="col-md-6 footer-column">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <span class="footer-heading"><img src="../img/logo flux.png" class="logoroda">
+                            <span class="footer-heading"><img src="../img/logo flux.png" id="logoroda">
                                 <br>
                                 Flux System</span>
                         </li>

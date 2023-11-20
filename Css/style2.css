@@ -4,7 +4,7 @@
     font-family: "kanit";
 }
 
-.logo {
+#logo {
     width: 110px;
 }
 
@@ -22,18 +22,18 @@
     background: rgb(133, 4, 4);
 }
 
-.foto1 {
+#foto1 {
     margin-left: 200px;
     margin-top: 70px;
     width: 600px;
     height: 600px;
 }
 
-.foto2 {
+#foto2 {
     margin-top: 100px;
 }
 
-.texto {
+#texto {
     padding: 20px;
     margin-left: 290px;
     margin-top: 230px;
@@ -41,36 +41,36 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
 }
 
-.texto p {
+#texto p {
     font-size: 20px;
 }
 
-.texto h1 {
+#texto h1 {
     font-size: bold 40px;
 }
 
-.texto1 {
+#texto1 {
     margin-top: 150px;
     margin-right: 100px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
 }
 
-.texto1 h1 {
+#texto1 h1 {
     font-size: bold 30px;
 }
 
-.texto1 p {
+#texto1 p {
     font-size: 20px;
 }
 
-.mapa {
+#mapa {
     height: 300px;
     width: 700px;
     border-color: 5px solid black;
 }
 
-.tabela1 {
+#tabela1 {
     display: flex;
     margin: 0 auto;
     width: 700px;
@@ -79,7 +79,7 @@
 
 
 
-.combo1 {
+#combo1 {
     background-color: rgba(236, 236, 236, 0.493);
     border-radius: 15px;
     width: 700px;
@@ -89,26 +89,26 @@
     margin-right: 50px;
 }
 
-.textomodal {
+#textomodal {
     text-align: center;
 }
 
-.modal-title {
+#modal-title {
     margin-left: 250px;
 }
 
-.nome {
+#nome {
     margin-left: 100px;
     font-size: 30px;
 }
 
-.desc {
+#desc {
     margin-left: 100px;
     font-size: 15px;
     width: 300px;
 }
 
-.fotoped {
+#fotoped {
     margin-top: 15px;
     margin-left: 15px;
     width: 200px;
@@ -116,7 +116,7 @@
     border-radius: 15px;
 }
 
-.fotomodal {
+#fotomodal {
     margin-top: 15px;
     margin-left: 15px;
     width: 500px;
@@ -140,19 +140,19 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
 }
 
-.roda {
+#roda {
     padding: 20px;
 }
 
-.logoroda {
+#logoroda {
     width: 100px;
     height: 100px;
 }
 
-.footer-heading {
+#footer-heading {
     font-size: 20px;
 }
 
-.btn_cad {
+#btn_cad {
     margin-top: 10px;
 }
