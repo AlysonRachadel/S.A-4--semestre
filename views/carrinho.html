@@ -25,7 +25,7 @@
 <body>
     <div id="container">
         <nav class="navbar navbar-expand-lg justify-content-between">
-            <a class="navbar-brand" href="index.html"> <img class="logo" src="../img/logo nome.png"></a>
+            <a class="navbar-brand" href="index.html"> <img id="logo" src="../img/logo nome.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,10 +46,10 @@
                     <tr>
                         <th class="table-head-item first-col">Item</th>
                         <th class="table-head-item second-col">Preço</th>
-                        <th class="table-head-item third-col">Quantidade</th>
+                        <!-- <th class="table-head-item third-col">Quantidade</th> -->
                     </tr>
                 </thead>
-
+                <tbody></tbody>
                 <tfoot>
                     <tr>
                         <td colspan="3" class="cart-total-container">
@@ -70,7 +70,7 @@
                 <div class="col-md-6 footer-column border-right">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <span class="footer-heading"><img src="../img/logo lateral.png" class="logoroda">
+                            <span class="footer-heading"><img src="../img/logo lateral.png" id="logoroda">
                                 <br>
                                 Da Hora Pizzaria</span>
                         </li>
@@ -91,7 +91,7 @@
                 <div class="col-md-6 footer-column">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <span class="footer-heading"><img src="../img/logo flux.png" class="logoroda">
+                            <span class="footer-heading"><img src="../img/logo flux.png" id="logoroda">
                                 <br>
                                 Flux System</span>
                         </li>
@@ -113,6 +113,98 @@
                 </div>
             </div>
         </footer>
+
+        <style>
+            .pizza-item {
+                position: relative;
+            }
+
+            .pizza-item .combo-nome {
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 1em;
+            }
+
+            .pizza-item .pizza-nome {
+                font-size: 20px;
+                color: #666;
+                padding-left: 10px;
+                line-height: 1em;
+            }
+
+            .pizza-item .sabor-nome {
+                font-size: 18px;
+                line-height: 1em;
+                font-style: italic;
+                color: #aaaaaa;
+                padding-left: 15px;
+                position: relative;
+            }
+
+            .pizza-item .sabor-nome:before {
+                content: '-';
+            }
+        </style>
+
+        <script>
+            var pizzasCarrinhoArr = localStorage.pizzasCarrinho;
+            if (!pizzasCarrinhoArr) {
+                pizzasCarrinhoArr = [];
+            } else {
+                pizzasCarrinhoArr = JSON.parse(pizzasCarrinhoArr);
+            }
+
+            //parseFloat($mdlContent.find('.price').text().replaceAll('.', '').replaceAll(',', '.').replace('R$', ''))
+
+            if (pizzasCarrinhoArr.length > 0) {
+
+                //console.dir(pizzasCarrinhoArr)
+
+                pizzasCarrinhoArr.forEach(function (_pizza, index) {
+                    //console.dir(_pizza);
+
+                    var pizzaNomeHTML = '',
+                        pizzaSaboresHTML = '';
+
+                    Object.keys(_pizza.pizzas).forEach(function (_pizzaNome) {
+                        var _pizzaSabores = _pizza.pizzas[_pizzaNome];
+                        // console.dir(_pizzaNome)
+                        // console.dir(_pizzaSabores)
+                        // console.dir('--')
+                        pizzaNomeHTML = '<div class="pizza-nome">'+ _pizzaNome +'</div>';
+
+                        _pizzaSabores.forEach(function (_pizzaSabor) {
+                            pizzaSaboresHTML += '<div class="sabor-nome">'+ _pizzaSabor +'</div>';
+                        });
+                    })
+
+                    console.dir(pizzaNomeHTML)
+                    console.dir(pizzaSaboresHTML)
+
+                    var _tr = `
+                    <tr>
+                        <td>
+                            <div class="pizza-item">
+                                <div class="combo-nome">` + _pizza.combo + `</div>
+                                `+ pizzaNomeHTML +`
+                                `+ pizzaSaboresHTML +`
+                            </div>
+                        </td>
+                        <td>` + _pizza.preco + `</td>
+                    </tr>`;
+
+                    console.dir(_tr)
+
+                    $('.cart-table tbody').append(_tr);
+                })
+
+            } else {
+                console.dir('alskd')
+                $('.purchase-button').after('<br><br><h2 class="text-center">Nenhum produto selecionado</h2>');
+                $('.purchase-button').remove();
+            }
+        </script>
+
 </body>
 
 </html>

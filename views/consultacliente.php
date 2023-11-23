@@ -47,7 +47,7 @@ $query = mysqli_query($con, $sql);
 	</nav>
 	<div align="center" class="container ">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 mt-5">
 				<div class="table-responsive ">
 					<table class="table table-bordered table-striped table-hover table-condensed ">
 						<thead>
