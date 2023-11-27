@@ -1,4 +1,4 @@
-if (document.readyState == 'loading') {
+/*if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
   } else {
     ready()
@@ -118,3 +118,6 @@ if (document.readyState == 'loading') {
     totalAmount = totalAmount.replace(".", ",")
     document.querySelector(".cart-total-container span").innerText = "R$" + totalAmount
   }
+
+*/
+  

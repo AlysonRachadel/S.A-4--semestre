@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const registerBtn = document.getElementById('register');
   const container = document.getElementById('container');
   const loginBtn = document.getElementById('login');
- 
+
 
   registerBtn.addEventListener('click', () => {
     container.classList.add('active');
@@ -45,6 +45,18 @@ function adicionarcarrinho() {
 var btnCarrinho = document.getElementById('btn-carrinho');
 btnCarrinho.addEventListener('click', adicionarcarrinho);
 
+
+
+
+$(document).ready(function () {
+  // Adicionar manipulador de evento para o botão "Adicionar ao carrinho"
+  $('button[name="addcarrinho"]').on('click', function () {
+    // Aqui você pode adicionar lógica para processar o item adicionado ao carrinho, se necessário
+
+    // Fechar o modal
+    $('#modal1').modal('hide');
+  });
+});
 
 /*
 function adicionaritem(item) {

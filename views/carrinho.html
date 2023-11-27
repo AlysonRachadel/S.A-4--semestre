@@ -41,7 +41,7 @@
 
         <h2 class="section-title">Carrinho</h2>
         <div class="mx-auto w-50">
-            <table class="cart-table ">
+            <table class="cart-table mx-auto">
                 <thead>
                     <tr>
                         <th class="table-head-item first-col">Item</th>
@@ -54,7 +54,7 @@
                     <tr>
                         <td colspan="3" class="cart-total-container">
                             <strong>Total</strong>
-                            <span>R$0,00</span>
+                            <span class="preco-pizza">R$0,00</span>
                         </td>
                     </tr>
                 </tfoot>
@@ -63,10 +63,10 @@
 
 
         </div>
-        <button type="button"  class="purchase-button">Finalizar Compra</button>
+        <button type="button" class="purchase-button">Finalizar Compra</button>
 
 
-        <footer class="">
+        <footer class="footers">
             <div class="row">
                 <div class="col-md-6 footer-column border-right">
                     <ul class="nav flex-column">
@@ -131,6 +131,7 @@
                 color: #666;
                 padding-left: 10px;
                 line-height: 1em;
+                margin-left: 50px;
             }
 
             .pizza-item .sabor-nome {
@@ -140,14 +141,107 @@
                 color: #aaaaaa;
                 padding-left: 15px;
                 position: relative;
+                margin-left: 50px;
             }
 
             .pizza-item .sabor-nome:before {
                 content: '-';
             }
+
+            .preco-pizza {
+                text-align: center;
+                font-size: 25px;
+
+            }
+
+            .btn-excluir {
+                margin-left: 50px;
+
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
         </style>
 
         <script>
+            $(document).ready(function () {
+                // Função para calcular a soma inicial e atualizar o localStorage
+                function calcularESalvarSomaInicial() {
+                    var somaInicial = 0;
+
+                    // Iterar sobre cada linha da tabela
+                    $('.preco-pizza').each(function () {
+                        var precoString = $(this).text().replace('R$', '').replace(',', '.').trim();
+                        var preco = parseFloat(precoString);
+                        somaInicial += preco;
+                    });
+
+                    // Exibir a soma na tabela
+                    $('.cart-total-container .preco-pizza').text('R$' + somaInicial.toFixed(2));
+
+                    // Salvar a soma inicial no localStorage
+                    localStorage.setItem('totalCarrinho', somaInicial.toFixed(2));
+                }
+
+                // Função para remover um item da tabela e do localStorage
+                function removerItem(index) {
+                    var pizzasCarrinhoArr = JSON.parse(localStorage.getItem('pizzasCarrinho')) || [];
+
+                    // Obter o preço do item a ser removido
+                    var precoRemovido = parseFloat($('.cart-table tbody tr').eq(index).find('.preco-pizza').text().replace('R$', '').replace(',', '.').trim());
+
+                    // Remover a linha da tabela
+                    $('.cart-table tbody tr').eq(index).remove();
+
+                    // Remover o item do array no localStorage
+                    pizzasCarrinhoArr.splice(index, 1);
+
+                    // Salvar o array atualizado de volta no localStorage
+                    localStorage.setItem('pizzasCarrinho', JSON.stringify(pizzasCarrinhoArr));
+
+                    // Recalcular a soma inicial e atualizar a exibição
+                    calcularESalvarSomaInicial();
+
+                    // Recarregar a página para refletir as mudanças
+                    location.reload();
+                }
+
+                // Função para finalizar a compra
+                function finalizarCompra() {
+                    // Limpar o localStorage ao finalizar a compra
+                    localStorage.removeItem('pizzasCarrinho');
+
+                    // Exibir uma mensagem ou redirecionar o usuário, conforme necessário
+                    alert('Pedido Finalizado! Total: R$' + localStorage.getItem('totalCarrinho'));
+
+                    // Recarregar a página
+                    location.reload();
+                }
+
+                // Chamar a função ao carregar a página
+                calcularESalvarSomaInicial();
+
+                // Adicionar manipulador de evento para recalcular a soma quando o conteúdo da tabela mudar
+                $('.cart-table').on('DOMSubtreeModified', function () {
+                    calcularESalvarSomaInicial();
+                });
+
+                // Adicionar manipulador de evento para recalcular a soma quando o botão de compra for clicado
+                $('.purchase-button').on('click', function () {
+                    finalizarCompra();
+                });
+
+                // Adicionar manipulador de evento para o botão de exclusão
+                $('.cart-table').on('click', '.btn-excluir', function () {
+                    var index = $(this).closest('tr').index();
+                    removerItem(index);
+                });
+            });
+
             var pizzasCarrinhoArr = localStorage.pizzasCarrinho;
             if (!pizzasCarrinhoArr) {
                 pizzasCarrinhoArr = [];
@@ -186,12 +280,14 @@
                     <tr>
                         <td>
                             <div class="pizza-item">
-                                <div class="combo-nome">` + _pizza.combo + `</div>
+                                <div class="combo-nome ">` + _pizza.combo + `</div>
                                 `+ pizzaNomeHTML + `
                                 `+ pizzaSaboresHTML + `
                             </div>
+                            <br>
                         </td>
-                        <td>` + _pizza.preco + `</td>
+                        <td class="preco-pizza">` + _pizza.preco + `
+                            <button type="button" class="btn btn-danger btn-excluir">Excluir</button></td>
                     </tr>`;
 
                     console.dir(_tr)
@@ -204,6 +300,13 @@
                 $('.purchase-button').after('<br><br><h2 class="text-center">Nenhum produto selecionado</h2>');
                 $('.purchase-button').remove();
             }
+
+
+
+
+
+
+
         </script>
 
 </body>

@@ -432,6 +432,7 @@ footer {
     border-radius: 25px;
     padding: 16px 20px;
     font-family: sans-serif;
+    cursor: pointer;
 }
 
 .purchase-button:hover {
