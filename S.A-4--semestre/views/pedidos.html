@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../Css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg justify-content-between">
+        <a class="navbar-brand" href="index.html"> <img id="logo" src="../img/logo nome.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <form class="form-inline">
+            <a href="cadprod.html">
+                <button type="button" id="btn" class="btn">Registrar</button>
+            </a>
+            <a href="consultacliente.php">
+                <button type="button" id="btn" class="btn">Consultar</button>
+            </a>
+            <a href="login.html">
+                <button type="button" id="btn" class="btn">Logar</button>
+            </a>
+        </form>
+        </div>
+    </nav>
+
+    <!-- Inicio combo-->
+
+    <div class="tbl mt-5">
+        <div id="tabela1">
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal1"><img src="../img/combo 1.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Combo DaHora</h3>
+                        <p id="desc" class="mt-3">
+                            Combo DaHora 1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1 sabor + 1 Pizza Média
+                            com 8 Fatias (30cm), com opção de até 3 sabores
+                        </p>
+                        <h3 id="nome">R$80,00</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim combo-->
+
+            <!-- Inicio combo-->
+
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal2"><img src="../img/combo 2.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Combo Pra Galera</h3>
+                        <p id="desc" class="mt-3">
+                            1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1
+                            sabores + 1 Pizza familia com 16 Fatias (45cm), com opção de até 4 sabores + 1
+                            Refrigerante 2l
+                        </p>
+                        <h2 id="nome">R$120,00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim combo-->
+
+    <!-- Inicio combo-->
+
+    <div class="tbl mt-5">
+        <div id="tabela1">
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal3"><img src="../img/pizza 4.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Pizza Broto </h3>
+                        <p id="desc" class="mt-3">
+                            Pizza Broto com 6 Fatias (25 cm), com opção de até 1
+                            sabores
+                        </p>
+                        <h3 id="nome">R$30,00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fim combo-->
+
+            <!-- Inicio combo-->
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal4"><img src="../img/pizza 3.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Pizza Média </h3>
+                        <p id="desc" class="mt-3">
+                            Pizza Média com 8 Fatias (30cm), com opção de até 3 sabores
+                        </p>
+                        <h2 id="nome">R$45,00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim combo-->
+
+    <!-- Inicio combo-->
+    <div class="tbl mt-5">
+        <div id="tabela1">
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal5"><img src="../img/pizza 2.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Pizza Grande</h3>
+                        <p id="desc" class="mt-3">
+                            Pizza Grande com 12 Fatias (40cm), com opção de até 4 sabores
+                        </p>
+                        <h3 id="nome">R$60,00</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim combo-->
+
+            <!-- Inicio combo-->
+            <div id="combo">
+                <div id="combo1" data-bs-toggle="modal" data-bs-target="#modal6"><img src="../img/pizza 1.jpg"
+                        id="fotoped">
+                    <div>
+                        <h3 id="nome" class="mt-3">Pizza Familia</h3>
+                        <p id="desc" class="mt-3">
+                            Pizza Familia com 16 Fatias (45cm), com opção de até 4 sabores
+                        </p>
+                        <h2 id="nome">R$85,00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim combo-->
+
+    <!-- Inicio Modal-->
+    <form action="" method="post">
+
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Combo DaHora</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="textomodal">
+                            <p>
+                                Combo DaHora 1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1 sabor + 1 Pizza
+                                Média
+                                com 8 Fatias (30cm), com opção de até 3 sabores
+                            </p>
+                            <div class="sabor-pizza-container">
+                                <h3>Pizza Broto - 1 Sabor</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Atração - Mussarela e Chocolate preto
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Banoffe - Mussarela, Banana e Chocolate preto
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Charge - Mussarela, Chocolate preto e Amendoim
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="sabor-pizza-container">
+                                <h3>Pizza Média - 3 Sabores</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        5 Queijos - Mussarela, Parmesão, Provolone, Catupiry e Cheddar
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Catuperu - Mussarela, Peito de Peru e Catupiry
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Calabresa - Mussarela, Calabresa e Oregano
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Frango Catupiry - Mussarela, Frango e Catupiry
+                                    </label>
+                                </div>
+                            </div>
+                            <h3 class="price">R$80,00</h3>
+                        </div>
+                    </div>
+                    <input type="hidden" name="id_produto" value="">
+                    <input type="hidden" name="valor" value="">
+                    <button type="button" class="btn btn-primary mx-auto mb-3" name="addcarrinho"
+                        data-bs-dismiss="modal">Adicionar ao
+                        carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal-->
+
+        <!-- Inicio Modal-->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Combo Pra Galera</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="textomodal">
+                            <p>
+                                1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1 sabores + 1 Pizza familia com 16
+                                Fatias (45cm), com opção de até 4 sabores + 1 Refrigerante 2l
+                            </p>
+                            <div class="sabor-pizza-container">
+                                <h3>Pizza Broto - 1 Sabor</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Atração - Mussarela e Chocolate preto
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Banoffe - Mussarela, Banana e Chocolate preto
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Charge - Mussarela, Chocolate preto e Amendoim
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="sabor-pizza-container">
+                                <h3>Pizza Familia - 4 Sabores</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        5 Queijos - Mussarela, Parmesão, Provolone, Catupiry e Cheddar
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Catuperu - Mussarela, Peito de Peru e Catupiry
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Calabresa - Mussarela, Calabresa e Oregano
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Frango Catupiry - Mussarela, Frango e Catupiry
+                                    </label>
+                                </div>
+                            </div>
+                            <h3 class="price">R$120,00</h3>
+                        </div>
+                    </div>
+                    <input type="hidden" name="id_produto" value="">
+                    <input type="hidden" name="valor" value="">
+                    <button type="button" class="btn btn-primary mx-auto mb-3" name="addcarrinho"
+                        data-bs-dismiss="modal">Adicionar ao
+                        carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal-->
+
+        <!-- Inicio Modal-->
+        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Pizza Broto</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="textomodal">
+                            <p>
+                                Pizza Broto com 6 Fatias (25 cm), com opção de até 1 sabores
+                            </p>
+                            <div class="sabor-pizza-container">
+                                <h3>Pizza Broto - 1 Sabor</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Atração - Mussarela e Chocolate preto
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Banoffe - Mussarela, Banana e Chocolate preto
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Charge - Mussarela, Chocolate preto e Amendoim
+                                    </label>
+                                </div>
+                            </div>
+                            <h3 class="price">R$30,00</h3>
+                        </div>
+                    </div>
+                    <input type="hidden" name="id_produto" value="">
+                    <input type="hidden" name="valor" value="">
+                    <button type="button" class="btn btn-primary mx-auto mb-3" name="addcarrinho"
+                        data-bs-dismiss="modal">Adicionar ao
+                        carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal-->
+
+        <!-- Inicio Modal-->
+        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Pizza Média</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="textomodal">
+                            <p>
+                                Pizza Média com 8 Fatias (30cm), com opção de até 3 sabores
+                            </p>
+                            <div class="sabor-pizza-container">
+                                <h3>Pizza Média - 3 Sabores</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        5 Queijos - Mussarela, Parmesão, Provolone, Catupiry e Cheddar
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Catuperu - Mussarela, Peito de Peru e Catupiry
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Calabresa - Mussarela, Calabresa e Oregano
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Frango Catupiry - Mussarela, Frango e Catupiry
+                                    </label>
+                                </div>
+                            </div>
+                            <h3 class="price">R$45,00</h3>
+                        </div>
+                    </div>
+                    <input type="hidden" name="id_produto" value="">
+                    <input type="hidden" name="valor" value="">
+                    <button type="button" class="btn btn-primary mx-auto mb-3" name="addcarrinho"
+                        data-bs-dismiss="modal">Adicionar ao
+                        carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal-->
+
+        <!-- Inicio Modal-->
+        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Pizza Grande</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="textomodal">
+                            <p>
+                                Pizza Grande com 12 Fatias (40cm), com opção de até 4 sabores
+                            </p>
+                            <div class="sabor-pizza-container">
+                                <h3>Pizza Grande - 4 Sabores</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        5 Queijos - Mussarela, Parmesão, Provolone, Catupiry e Cheddar
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Catuperu - Mussarela, Peito de Peru e Catupiry
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Calabresa - Mussarela, Calabresa e Oregano
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Frango Catupiry - Mussarela, Frango e Catupiry
+                                    </label>
+                                </div>
+                            </div>
+                            <h3 class="price">R$60,00</h3>
+                        </div>
+                    </div>
+                    <input type="hidden" name="id_produto" value="">
+                    <input type="hidden" name="valor" value="">
+                    <button type="button" class="btn btn-primary mx-auto mb-3" name="addcarrinho"
+                        data-bs-dismiss="modal">Adicionar ao
+                        carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal-->
+
+        <!-- Inicio Modal-->
+        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Pizza Familia</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="textomodal">
+                            <p>
+                                Combo DaHora 1 Pizza Broto com 6 Fatias (25 cm) com opção de até 1 sabor + 1 Pizza
+                                Média
+                                com 8 Fatias (30cm), com opção de até 3 sabores
+                            </p>
+                            <div class="sabor-pizza-container">
+                                <h3>Pizza Familia - 4 Sabores</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        5 Queijos - Mussarela, Parmesão, Provolone, Catupiry e Cheddar
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Catuperu - Mussarela, Peito de Peru e Catupiry
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Calabresa - Mussarela, Calabresa e Oregano
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Frango Catupiry - Mussarela, Frango e Catupiry
+                                    </label>
+                                </div>
+                            </div>
+                            <h3 class="price">R$85,00</h3>
+                        </div>
+                    </div>
+                    <label id="erromsg" style="color: red;"></label>
+                    <input type="hidden" name="id_produto" value="">
+                    <input type="hidden" name="valor" value="">
+                    <button type="button" class="btn btn-primary mx-auto mb-3" name="addcarrinho"
+                        data-bs-dismiss="modal">Adicionar ao
+                        carrinho</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fim modal-->
+    </form>
+
+    <!-- Inicio Footer-->
+    <div class="fixed-bottom d-flex justify-content-end ">
+        <a href="carrinho.html">
+            <button type="button" id="botao-carrinho" class="btn"><i class="fa-solid fa-cart-shopping"
+                    style="color: #ffffff;"></i></button>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 footer-column border-right">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <span class="footer-heading"><img src="../img/logo lateral.png" id="logoroda">
+                                <br>
+                                Da Hora Pizzaria</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"> (47) 9 9925-3412</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bi bi-facebook"
+                                href="https://www.facebook.com/p/Da-hora-pizzaria-100044583169387/"> Da Hora
+                                pizzaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dahorapizza@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 footer-column">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <span class="footer-heading"><img src="../img/logo flux.png" id="logoroda">
+                                <br>
+                                Flux System</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">h.xavier1232012@gmail.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">alyson.vinicius@icloud.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-2 box">
+                    <span class="copyright quick-links">Copyright &copy; Flux System
+                        <script>document.write(new Date().getFullYear())</script>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim Footer-->
+    <script src="script.js"></script>
+
+    <script>
+        var pizzasCarrinhoArr = localStorage.pizzasCarrinho;
+        if (!pizzasCarrinhoArr) {
+            pizzasCarrinhoArr = [];
+        } else {
+            pizzasCarrinhoArr = JSON.parse(pizzasCarrinhoArr);
+        }
+
+        $(function () {
+            $('[name="addcarrinho"]').on('click', function (e) {
+                var $btn = $(this),
+                    $mdlContent = $btn.closest('.modal-content'),
+                    $saborPizzaContainer = $mdlContent.find('.sabor-pizza-container'),
+                    comboNome = $mdlContent.find('h1').text(),
+                    pizzaIndex = pizzasCarrinhoArr.length,
+                    pizzaPrice = $mdlContent.find('.price').text();
+
+                pizzasCarrinhoArr[pizzaIndex] = {};
+                pizzasCarrinhoArr[pizzaIndex]['combo'] = comboNome;
+                pizzasCarrinhoArr[pizzaIndex]['preco'] = pizzaPrice;
+                pizzasCarrinhoArr[pizzaIndex]['pizzas'] = {};
+
+                $saborPizzaContainer.each(function (index, _saborPizzaContainer) {
+                    var $saborPizzaContainer = $(_saborPizzaContainer),
+                        saborPizzaContainerTitle = $saborPizzaContainer.find('h3').text(),
+                        $saboresSelecionados = $saborPizzaContainer.find('[type="checkbox"]:checked, [type="radio"]:checked');
+
+                    if ($saboresSelecionados.length > 0) {
+                        pizzasCarrinhoArr[pizzaIndex]['pizzas'][saborPizzaContainerTitle.trim()] = [];
+
+                        $saboresSelecionados.each(function (indexEl, _saborPizza) {
+                            var $saborPizza = $(_saborPizza),
+                                saborPizzaNome = $saborPizza.next().text();
+
+                            pizzasCarrinhoArr[pizzaIndex]['pizzas'][saborPizzaContainerTitle.trim()].push(saborPizzaNome.trim());
+                        });
+                    }
+                });
+
+                localStorage.pizzasCarrinho = JSON.stringify(pizzasCarrinhoArr);
+            });
+
+        })
+    </script>
+</body>
